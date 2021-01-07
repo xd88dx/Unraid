@@ -13,7 +13,7 @@
     </Description>
     <Category>Cloud: Network:Web Status:Stable</Category>
     <WebUI>http://[IP]:[PORT:7869]</WebUI>
-    <Icon>https://img.onlinedown.net/download/202011/212501-5fb3cf2d8fa2e.jpg</Icon>
+    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-icon.png</Icon>
     <PostArgs></PostArgs>
     <CPUset/>
     <DateInstalled></DateInstalled>
