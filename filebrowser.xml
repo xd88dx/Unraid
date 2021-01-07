@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container>
-  <Name>FileBrowser</Name>
+  <Name>filebrowser</Name>
   <Repository>80x86/filebrowser:latest</Repository>
   <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
   <Network>bridge</Network>
@@ -45,16 +45,6 @@
   </Data>
   <Environment>
     <Variable>
-      <Value>99</Value>
-      <Name>PUID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>100</Value>
-      <Name>PGID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
       <Value>7888</Value>
       <Name>WEB_PORT</Name>
       <Mode/>
@@ -62,6 +52,16 @@
     <Variable>
       <Value>"127.0.0.1"</Value>
       <Name>FB_AUTH_SERVER_ADDR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
       <Mode/>
     </Variable>
   </Environment>
