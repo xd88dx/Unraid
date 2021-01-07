@@ -1,18 +1,58 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+#如果名称最前面是(/),表示忽略当前目录下的该文件
+#如果名称最后面是(/),表示忽略整个目录下的该文件
+#如果名称前面加(!),代表不忽略
+#  *.a  所有后缀为a的文件
+#  .a   所有名称为.a的文件
+#  /.a  仅当前目录下的.a文件
+#  a/   所有名称为a的文件夹
+#  /a   仅当前目录下的a文件夹
+# !*.a  不忽略后缀为a的文件
 
-# Other files and folders
-.settings/
+# Maven File
+target/
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+!.mvn/wrapper/*
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Eclipse File
+#.project
+#.settings/
+#.classpath
+bin/
+classes/
+.metadata/
+EclipseWork/
+.externalToolBuilders/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# IDEA File
+.idea
+*.iml
+*.ipr
+*.iws
+out
+
+# STS(Spring Tool Suite)
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+
+# Locale File
+*.log
+*.tmp
+*.diff
+*.class
+*.cache
+*.patch
+
+# Common File
+gen/
+tmp/
+*.bak
+*.swp
+*~.nib
+*.launch
+*.pydevproject
