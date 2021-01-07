@@ -1,21 +1,22 @@
 <?xml version="1.0"?>
-<Container>
+<Container version="2">
   <Name>FileBrowser</Name>
-  <Repository>80x86/filebrowser:2.9.1-amd64</Repository>
+  <Repository>80x86/filebrowser:latest</Repository>
   <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://www.lxg2016.com/54202.html</Support>
+  <Shell>sh</Shell>
+  <Support>https://hub.docker.com/r/80x86/filebrowser</Support>
   <Project>https://hub.docker.com/r/80x86/filebrowser</Project>
   <Overview>filebrowser</Overview>
   <Description>
-    使用荒野无灯大神的镜像，具体使用教程可访问https://www.lxg2016.com/54202.html查看
+    使用荒野无灯大神的镜像,期间参照了阿文菌,人生观博主的文章
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:8083]</WebUI>
+  <WebUI>http://[IP]:[PORT:7888]</WebUI>
   <Icon>https://github.com/maschhoff/docker/raw/master/filebrowser/35781395.png</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
-  <PostArgs></PostArgs>
+  <PostArgs/>
   <CPUset/>
   <DateInstalled></DateInstalled>
   <DonateText/>
@@ -23,41 +24,32 @@
   <Description></Description>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/filebrowser</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/myfiles</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>想管理的路径</HostDir>
-      <ContainerDir>/myfiles</ContainerDir>
+      <HostDir>/mnt/user/appdata/FileBrowser</HostDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
     <Variable>
-      <Value>0</Value>
+      <Value>99</Value>
       <Name>PUID</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>0</Value>
+      <Value>100</Value>
       <Name>PGID</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>on或off</Value>
-      <Name>SSL</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>000</Value>
-      <Name>UMASK_SET</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>8083</Value>
+      <Value>7888</Value>
       <Name>WEB_PORT</Name>
       <Mode/>
     </Variable>
   </Environment>
+  <Labels/>
 </Container>
