@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <Container>
   <Name>FileBrowser</Name>
-  <Repository>80x86/filebrowser:2.9.1-amd64</Repository>
+  <Repository>80x86/filebrowser:latest</Repository>
   <Registry>https://hub.docker.com/r/80x86/filebrowser</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://www.lxg2016.com/54202.html</Support>
+  <Support>https://hub.docker.com/r/80x86/filebrowser</Support>
   <Project>https://hub.docker.com/r/80x86/filebrowser</Project>
   <Overview>filebrowser</Overview>
   <Description>
-    使用荒野无灯大神的镜像，具体使用教程可访问
+    使用荒野无灯大神的镜像,期间参照了阿文菌,人生观博主的文章
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:8083]</WebUI>
+  <WebUI>http://[IP]:[PORT:7888]</WebUI>
   <Icon>https://github.com/maschhoff/docker/raw/master/filebrowser/35781395.png</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs></PostArgs>
@@ -21,6 +21,16 @@
   <DonateText/>
   <DonateLink/>
   <Description></Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7888</HostPort>
+        <ContainerPort>7888</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/filebrowser</HostDir>
@@ -28,35 +38,30 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>想管理的路径</HostDir>
+      <HostDir>/mnt/user</HostDir>
       <ContainerDir>/myfiles</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
     <Variable>
-      <Value>0</Value>
+      <Value>99</Value>
       <Name>PUID</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>0</Value>
+      <Value>100</Value>
       <Name>PGID</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>on或off</Value>
-      <Name>SSL</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>000</Value>
-      <Name>UMASK_SET</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>8083</Value>
+      <Value>7888</Value>
       <Name>WEB_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>"127.0.0.1"</Value>
+      <Name>FB_AUTH_SERVER_ADDR</Name>
       <Mode/>
     </Variable>
   </Environment>
