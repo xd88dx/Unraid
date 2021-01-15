@@ -9,7 +9,7 @@
     <Project>https://hub.docker.com/r/dzhuang/tinymediamanager</Project>
     <Overview>tinymediamanager</Overview>
     <Description>
-        参考了blackocean博主的文章,测试中
+        测试中
     </Description>
     <Category>Cloud: Network:Web Status:Stable</Category>
     <WebUI>http://[IP]:[PORT:5858]</WebUI>
