@@ -9,7 +9,7 @@
     <Project>https://hub.docker.com/r/ugeek/webdav</Project>
     <Overview>webdav</Overview>
     <Description>
-        测试中
+        WebDAV服务
     </Description>
     <Category>Cloud: Network:Web Status:Stable</Category>
     <WebUI>http://[IP]:[PORT:5123]</WebUI>
