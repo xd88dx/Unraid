@@ -417,6 +417,7 @@
   content: '\f03a';
 }
 /* xd88dx */
-.material-icons {
+.listItemIcon,
+.navMenuOptionIcon {
   width: 30px !important;
 }
