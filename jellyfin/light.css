@@ -421,3 +421,13 @@
 .navMenuOptionIcon {
   width: 30px !important;
 }
+.btnRefresh,
+#btnRestartServer,
+#btnShutdown {
+  padding-top: 0.8em !important;
+  padding-bottom: 0.7em !important;
+}
+.headerHelpButton {
+  padding-top: 0.5em !important;
+  padding-bottom: 0.3em !important;
+}
