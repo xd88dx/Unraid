@@ -9,7 +9,7 @@
   <Project>https://hub.docker.com/r/80x86/filebrowser</Project>
   <Overview>filebrowser</Overview>
   <Description>
-    使用荒野无灯大神的镜像,期间参考了阿文菌,人生观博主的文章
+  使用荒野无灯大神的镜像,期间参考了阿文菌,人生观博主的文章
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:7888]</WebUI>
