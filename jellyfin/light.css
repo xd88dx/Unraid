@@ -418,3 +418,7 @@
 .material-icons.view_list:before {
   content: '\f03a';
 }
+/* xd88dx */
+.material-icons {
+  width: 18px !important;
+}
