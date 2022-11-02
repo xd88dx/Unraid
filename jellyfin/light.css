@@ -417,24 +417,32 @@
   content: '\f03a';
 }
 /* xd88dx */
+/* 统一图标宽度 */
 .listItemIcon,
 .navMenuOptionIcon {
   width: 30px !important;
 }
+/* 弹出框背景色 */
 .dialog {
   background: rgb(50 50 50 / 70%);
 }
+/* 扫描,重启,关机按钮内间距 */
 .btnRefresh,
 #btnRestartServer,
 #btnShutdown {
   padding-top: 0.6em !important;
   padding-bottom: 0.5em !important;
 }
+/* 帮助按钮内间距 */
 .headerHelpButton {
   padding-top: 0.5em !important;
   padding-bottom: 0.3em !important;
 }
+/* 读取器设置项间距 */
 .backdropFields {
   margin-top: 3%;
 }
-
+/* OpenSubtitles设置项间距 */
+#OpenSubtitlesConfigForm {
+  margin-top: 3%;
+}
